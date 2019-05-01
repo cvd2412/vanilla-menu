@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Burger menu</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<nav>
+    <input type="checkbox" id="menu"/>
+    <label for="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <ul>
+        <li><a href="#" class="active">Profil</a></li>
+        <li><a href="#">Ydelser</a></li>
+        <li><a href="#">Arbejdsgang</a></li>
+        <li><a href="#">Referencer</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="header">
+        <div>Seo<i>.</i> Linkbuild<i>.</i> Content<i>.</i></div>
+    </div>
+    <div class="box-wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</div>
+
+<script>
+    let menu = document.getElementById("menu");
+    menu.onchange = function () {
+        document.body.classList.toggle("overflow");
+    };
+
+    let isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if (isIE) {
+        document.body.classList.add("ie");
+    }
+</script>
+</body>
+</html>
